@@ -4,7 +4,7 @@ import pygame
 
 # define colors
 COLOR_GREEN = pygame.Color(0, 255, 0)
-SPEED_SNAKE = 5 # snake will move 
+SPEED_OF_SNAKE = 5 # times of move in 1 sec
 USEREVENT_SNAKE_MOVE = pygame.USEREVENT
 
 class Snake:
@@ -14,7 +14,7 @@ class Snake:
         self.head = [100, 50]
         self.body = [ [100, 50], [90, 50], [80, 50], [70, 50] ]
         self.direction = pygame.K_RIGHT
-        pygame.time.set_timer(USEREVENT_SNAKE_MOVE, 200)
+        pygame.time.set_timer(USEREVENT_SNAKE_MOVE, 1000//SPEED_OF_SNAKE)
 
     def ChangeDirection(self, key):
         if key == pygame.K_UP and self.direction != pygame.K_DOWN:

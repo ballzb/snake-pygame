@@ -17,7 +17,7 @@ Download the source code from the repository and run the file just as any other 
 python main.py
 ```
 
-The `difficulty` variable can be changed with the values provided in the comment to set the difficulty level.
+The `SPEED_OF_SNAKE` variable in snake.py can be changed to set the difficulty level, the faster, the harder.
 
 The rest of the code is properly commented and self explanatory. Tweaks can be made to change the play style or visuals of the game.
 
